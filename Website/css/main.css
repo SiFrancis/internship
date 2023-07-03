@@ -1,120 +1,131 @@
+:root {
+    --maincolor: darkviolet;
+    --lightmain: blueviolet;
+}
+
 body {
-	font-family: monospace;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
 a {
-	text-decoration: blink;
-	color: whitesmoke;
+    text-decoration: blink;
+    color: whitesmoke;
 }
 
-h1, h2, h3 {
-	margin: 0;
+h1,
+h2,
+h3 {
+    margin: 0;
 }
 
 ul {
-	margin: 10px;
+    margin: 10px;
 }
 
-
-
 a.next {
-	color: blue;
-	float: right;
-	margin-right: 20px;
+    color: blue;
+    float: right;
+    margin-right: 20px;
 }
 
 a.prev {
-	color: blue;
-	float: left;
-	margin-left: 20px;
+    color: blue;
+    float: left;
+    margin-left: 20px;
 }
 
-
-.container{
-	background-color: white;
-	width: 800px;
-	margin-left: auto;
-	margin-right: auto;
+.container {
+    background-color: white;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.header{
-	background-color: red ;
-	color: white;
-	text-align: center;
+.header {
+    background-color: var(--maincolor);
+    color: black;
+    text-align: center;
+    padding: 10px 0;
 }
 
 .content {
-	padding: 5px ;
+    padding: 5px;
 }
 
 .nav {
-	width: 180px;
-	height: 1300px;
-	float: left;
-	background-color: black;
+    width: 180px;
+    height: 1300px;
+    float: right;
+    background-color: black;
+    color: white;
 }
 
-.nav ul{
-	list-style-type: none;
-	padding: 0;
+.nav ul {
+    list-style-type: none;
+    padding: 0;
 }
 
-.nav .selected{
-	font-weight: bold;
-	font-size: 20px;
-	color: orangered;
+.nav-heading {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.nav .selected {
+    font-weight: bold;
+    color: var(--lightmain);
 }
 
 .main {
-	width: 600px;
-	float: right;
-	margin: 5px;
+    margin: 5px;
 }
 
-.header2{
-	background-color: orangered ;
-	color: white;
-	text-align: center;
+.header2 {
+    background-color: var(--lightmain);
+    color: white;
+    text-align: center;
 }
 
 .footer {
-	clear: both;
-	padding: 10px;
-	background-color: #999999;
-	color: white;
-	text-align: right;
+    clear: both;
+    padding: 10px;
+    background-color: #999999;
+    color: white;
+    text-align: right;
 }
 
-.picture
-{
-	float: left;
-	width: 190px;
-	min-height: 120px;
-	margin: 15px;
+.picture {
+    float: left;
+    width: 190px;
+    margin: 15px;
 }
 
-.paragraph
-{
-	width: 100%
+.paragraph {
+    width: 100%;
 }
 
-.Title 
-{
-	font-style: bold  ;
-	font-size: 20px;
+.paragraph::after {
+    content: "";
+    clear: left;
+    display: table;
 }
 
-h1.webname
-{
-	font-size: 400%;
+.article-title {
+    font-style: bold;
 }
 
-.anime
-{
-	color: Black;
+h1.webname {
+    font-size: 400%;
+    transition: color 0.2s;
 }
 
-b.top
-{
-	color: orangered ;
+h1.webname:hover {
+    color: white;
+}
+
+.top-title {
+    color: white;
+}
+
+b.top {
+    color: var(--lightmain);
 }
