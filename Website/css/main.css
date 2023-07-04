@@ -126,6 +126,6 @@ h1.webname:hover {
     color: white;
 }
 
-b.top {
+b.highlight {
     color: var(--lightmain);
 }
