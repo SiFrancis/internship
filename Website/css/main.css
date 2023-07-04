@@ -7,7 +7,7 @@ body {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
-a {
+li a {
     text-decoration: blink;
     color: whitesmoke;
 }
@@ -115,10 +115,15 @@ a.prev {
 
 h1.webname {
     font-size: 400%;
+}
+
+h1.webname a {
+    text-decoration: none;
+    color: black;
     transition: color 0.2s;
 }
 
-h1.webname:hover {
+h1.webname a:hover {
     color: white;
 }
 
