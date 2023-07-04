@@ -61,7 +61,7 @@ a.prev {
 
 .nav {
     width: 180px;
-    height: 1100px;
+    height: 1200px;
     float: right;
     background-color: black;
     color: white;
@@ -103,7 +103,7 @@ a.prev {
 .picture {
     float: left;
     width: 190px;
-    margin: 15px;
+    padding: 15px;
 }
 
 .paragraph {
@@ -125,13 +125,13 @@ h1.webname {
     font-size: 400%;
 }
 
-h1.webname a {
+a.toplink h1 {
     text-decoration: none;
     color: black;
     transition: color 0.2s;
 }
 
-h1.webname a:hover {
+a.toplink:hover h1 {
     color: white;
 }
 
