@@ -1,7 +1,7 @@
 /********** Template CSS **********/
 :root {
-    --primary: #FF3E41;
-    --secondary: #51CFED;
+    --primary: #e1c5ad;
+    --secondary: #5c4024;
     --light: #F8F2F0;
     --dark: #060315;
 }
@@ -109,6 +109,23 @@
 .navbar-light .navbar-brand,
 .navbar-light a.btn {
     height: 75px;
+}
+
+a.navbar-brand {
+    background-color: #FFFFFF;
+    transition: background-color 0.2s;
+}
+
+a.navbar-brand img {
+    transition: filter 0.3s;
+}
+
+a.navbar-brand:hover {
+    background-color: var(--primary);
+}
+
+a.navbar-brand:hover img {
+    filter: invert(50%) brightness(200%);
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -224,6 +241,11 @@
     background-size: cover;
 }
 
+#shop-header {
+    background: linear-gradient(rgba(6, 3, 21, .5), rgba(6, 3, 21, .5)), url(../img/shop-bg.webp) left 40% no-repeat;
+    background-size: cover;
+}
+
 .breadcrumb-item + .breadcrumb-item::before {
     color: var(--light);
 }
@@ -315,7 +337,7 @@
     display: inline-flex;
     align-items: center;
     font-size: 16px;
-    color: #FFFFFF;
+    color: var(--dark);
     background: var(--primary);
     border-radius: 0 35px 35px 0;
     transition: .5s;
@@ -355,6 +377,7 @@
 .price-item a.btn-slide:hover i,
 .price-item a.btn-slide:hover span {
     background: var(--secondary);
+    color: #FFFFFF;
 }
 
 

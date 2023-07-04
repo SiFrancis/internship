@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Logistica - Shipping Company Website Template</title>
+    <title>Coffee Project</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -43,8 +43,8 @@
 
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light shadow border-top border-5 border-primary sticky-top p-0">
-        <a href="index.html" class="navbar-brand bg-primary d-flex align-items-center px-4 px-lg-5">
-            <h2 class="mb-2 text-white">Logistica</h2>
+        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+            <img class="h-50" src="img/cofproj-removebg.png" alt="">
         </a>
         <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
@@ -55,14 +55,13 @@
                 <a href="about.html" class="nav-item nav-link">About</a>
                 <a href="service.html" class="nav-item nav-link">Services</a>
                 <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Pages</a>
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Shop</a>
                     <div class="dropdown-menu fade-up m-0">
-                        <a href="price.html" class="dropdown-item active">Pricing Plan</a>
-                        <a href="feature.html" class="dropdown-item">Features</a>
-                        <a href="quote.html" class="dropdown-item">Free Quote</a>
-                        <a href="team.html" class="dropdown-item">Our Team</a>
+                        <a href="price.html" class="dropdown-item">Drinks</a>
+                        <a href="feature.html" class="dropdown-item">Food</a>
+                        <a href="quote.html" class="dropdown-item">Pastries</a>
+                        <a href="team.html" class="dropdown-item">Gift Card</a>
                         <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                        <a href="404.html" class="dropdown-item">404 Page</a>
                     </div>
                 </div>
                 <a href="contact.html" class="nav-item nav-link">Contact</a>
@@ -74,9 +73,9 @@
 
 
     <!-- Page Header Start -->
-    <div class="container-fluid page-header py-5" style="margin-bottom: 6rem;">
+    <div class="container-fluid page-header py-5" id="shop-header" style="margin-bottom: 3rem;">
         <div class="container py-5">
-            <h1 class="display-3 text-white mb-3 animated slideInDown">Pricing</h1>
+            <h1 class="display-3 text-white mb-3 animated slideInDown">Shop</h1>
             <nav aria-label="breadcrumb animated slideInDown">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
@@ -88,130 +87,148 @@
     </div>
     <!-- Page Header End -->
 
+    <p class="lead text-center">Placeholder</p>
 
     <!-- Pricing Start -->
-    <div class="container-xxl py-5">
-        <div class="container py-5">
+    <div class="container-xxl pt-3 pb-5">
+
+        <!-- DRINKS MENU -->
+
+        <div class="container py-5" id="menu-drinks">
             <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                <h6 class="text-secondary text-uppercase">Pricing Plan</h6>
-                <h1 class="mb-5">Perfect Pricing Plan</h1>
+                <h1 class="mb-5">Drinks Menu</h1>
             </div>
             <div class="row g-4">
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="price-item">
-                        <div class="border-bottom p-4 mb-4">
-                            <h5 class="text-primary mb-1">Basic Plan</h5>
-                            <h1 class="display-5 mb-0">
-                                <small class="align-top" style="font-size: 22px; line-height: 45px;">$</small>49.00<small
-                                    class="align-bottom" style="font-size: 16px; line-height: 40px;">/ Month</small>
+                        <div class="border-bottom p-4 mb-3">
+                            <h4 class="mb-1">Berry & Pomegranate Green Tea</h4>
+                            <h1 class="display-6 mb-0">
+                                <small class="align-top" style="font-size: 20px; line-height: 45px;">₱</small>185.00
                             </h1>
+                            <img class="img-fluid" src="img/berryandpom_540x.webp" alt="">
                         </div>
-                        <div class="p-4 pt-0">
-                            <p><i class="fa fa-check text-success me-3"></i>HTML5 & CSS3</p>
-                            <p><i class="fa fa-check text-success me-3"></i>Bootstrap v5</p>
-                            <p><i class="fa fa-check text-success me-3"></i>FontAwesome Icons</p>
-                            <p><i class="fa fa-check text-success me-3"></i>Responsive Layout</p>
-                            <p><i class="fa fa-check text-success me-3"></i>Cross-browser Support</p>
-                            <a class="btn-slide mt-2" href=""><i class="fa fa-arrow-right"></i><span >Order Now</span></a>
+                        <div class="p-3 pt-0">
+                            <a class="btn-slide mt-2" href=""><i class="fa fa-shopping-cart"></i><span >Add to Cart</span></a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="price-item">
-                        <div class="border-bottom p-4 mb-4">
-                            <h5 class="text-primary mb-1">Standard Plan</h5>
-                            <h1 class="display-5 mb-0">
-                                <small class="align-top" style="font-size: 22px; line-height: 45px;">$</small>99.00<small
-                                    class="align-bottom" style="font-size: 16px; line-height: 40px;">/ Month</small>
+                        <div class="border-bottom p-4 mb-3">
+                            <h4 class="mb-1">Capuccino Frappe</h4>
+                            <h1 class="display-6 mb-0">
+                                <small class="align-top" style="font-size: 20px; line-height: 45px;">₱</small>205.00
                             </h1>
+                            <h4 class="m-0">&nbsp;</h4>
+                            <img class="img-fluid" src="img/cappuccinoiced_540x.webp" alt="">
                         </div>
-                        <div class="p-4 pt-0">
-                            <p><i class="fa fa-check text-success me-3"></i>HTML5 & CSS3</p>
-                            <p><i class="fa fa-check text-success me-3"></i>Bootstrap v5</p>
-                            <p><i class="fa fa-check text-success me-3"></i>FontAwesome Icons</p>
-                            <p><i class="fa fa-check text-success me-3"></i>Responsive Layout</p>
-                            <p><i class="fa fa-check text-success me-3"></i>Cross-browser Support</p>
-                            <a class="btn-slide mt-2" href=""><i class="fa fa-arrow-right"></i><span >Order Now</span></a>
+                        <div class="p-3 pt-0">
+                            <a class="btn-slide mt-2" href=""><i class="fa fa-shopping-cart"></i><span >Add to Cart</span></a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.7s">
+                <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="price-item">
-                        <div class="border-bottom p-4 mb-4">
-                            <h5 class="text-primary mb-1">Advanced Plan</h5>
-                            <h1 class="display-5 mb-0">
-                                <small class="align-top" style="font-size: 22px; line-height: 45px;">$</small>149.00<small
-                                    class="align-bottom" style="font-size: 16px; line-height: 40px;">/ Month</small>
+                        <div class="border-bottom p-4 mb-3">
+                            <h4 class="mb-1">Caramel Vanilla Frappe</h4>
+                            <h1 class="display-6 mb-0">
+                                <small class="align-top" style="font-size: 20px; line-height: 45px;">₱</small>200.00
                             </h1>
+                            <h4 class="m-0">&nbsp;</h4>
+                            <img class="img-fluid" src="img/caramelvanillafrappe_540x.webp" alt="">
                         </div>
-                        <div class="p-4 pt-0">
-                            <p><i class="fa fa-check text-success me-3"></i>HTML5 & CSS3</p>
-                            <p><i class="fa fa-check text-success me-3"></i>Bootstrap v5</p>
-                            <p><i class="fa fa-check text-success me-3"></i>FontAwesome Icons</p>
-                            <p><i class="fa fa-check text-success me-3"></i>Responsive Layout</p>
-                            <p><i class="fa fa-check text-success me-3"></i>Cross-browser Support</p>
-                            <a class="btn-slide mt-2" href=""><i class="fa fa-arrow-right"></i><span >Order Now</span></a>
+                        <div class="p-3 pt-0">
+                            <a class="btn-slide mt-2" href=""><i class="fa fa-shopping-cart"></i><span >Add to Cart</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="price-item">
+                        <div class="border-bottom p-4 mb-3">
+                            <h4 class="mb-1">Coffee Crème Brûlée Frappe</h4>
+                            <h1 class="display-6 mb-0">
+                                <small class="align-top" style="font-size: 20px; line-height: 45px;">₱</small>225.00
+                            </h1>
+                            <img class="img-fluid" src="img/coffeecremebrulee_1f059366-8423-45db-ad19-6b0b646ca711_540x.webp" alt="">
+                        </div>
+                        <div class="p-3 pt-0">
+                            <a class="btn-slide mt-2" href=""><i class="fa fa-shopping-cart"></i><span >Add to Cart</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FOOD MENU -->
+
+        <div class="container py-5" id="menu-food">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h1 class="mb-5">Drinks Menu</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="price-item">
+                        <div class="border-bottom p-4 mb-3">
+                            <h4 class="mb-1">Berry & Pomegranate Green Tea</h4>
+                            <h1 class="display-6 mb-0">
+                                <small class="align-top" style="font-size: 20px; line-height: 45px;">₱</small>185.00
+                            </h1>
+                            <img class="img-fluid" src="img/berryandpom_540x.webp" alt="">
+                        </div>
+                        <div class="p-3 pt-0">
+                            <a class="btn-slide mt-2" href=""><i class="fa fa-shopping-cart"></i><span >Add to Cart</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="price-item">
+                        <div class="border-bottom p-4 mb-3">
+                            <h4 class="mb-1">Capuccino Frappe</h4>
+                            <h1 class="display-6 mb-0">
+                                <small class="align-top" style="font-size: 20px; line-height: 45px;">₱</small>205.00
+                            </h1>
+                            <h4 class="m-0">&nbsp;</h4>
+                            <img class="img-fluid" src="img/cappuccinoiced_540x.webp" alt="">
+                        </div>
+                        <div class="p-3 pt-0">
+                            <a class="btn-slide mt-2" href=""><i class="fa fa-shopping-cart"></i><span >Add to Cart</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="price-item">
+                        <div class="border-bottom p-4 mb-3">
+                            <h4 class="mb-1">Caramel Vanilla Frappe</h4>
+                            <h1 class="display-6 mb-0">
+                                <small class="align-top" style="font-size: 20px; line-height: 45px;">₱</small>200.00
+                            </h1>
+                            <h4 class="m-0">&nbsp;</h4>
+                            <img class="img-fluid" src="img/caramelvanillafrappe_540x.webp" alt="">
+                        </div>
+                        <div class="p-3 pt-0">
+                            <a class="btn-slide mt-2" href=""><i class="fa fa-shopping-cart"></i><span >Add to Cart</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="price-item">
+                        <div class="border-bottom p-4 mb-3">
+                            <h4 class="mb-1">Coffee Crème Brûlée Frappe</h4>
+                            <h1 class="display-6 mb-0">
+                                <small class="align-top" style="font-size: 20px; line-height: 45px;">₱</small>225.00
+                            </h1>
+                            <img class="img-fluid" src="img/coffeecremebrulee_1f059366-8423-45db-ad19-6b0b646ca711_540x.webp" alt="">
+                        </div>
+                        <div class="p-3 pt-0">
+                            <a class="btn-slide mt-2" href=""><i class="fa fa-shopping-cart"></i><span >Add to Cart</span></a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Pricing End -->
-
-
-    <!-- Quote Start -->
-    <div class="container-xxl py-5">
-        <div class="container py-5">
-            <div class="row g-5 align-items-center">
-                <div class="col-lg-5 wow fadeInUp" data-wow-delay="0.1s">
-                    <h6 class="text-secondary text-uppercase mb-3">Get A Quote</h6>
-                    <h1 class="mb-5">Request A Free Qoute!</h1>
-                    <p class="mb-5">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo erat amet</p>
-                    <div class="d-flex align-items-center">
-                        <i class="fa fa-headphones fa-2x flex-shrink-0 bg-primary p-3 text-white"></i>
-                        <div class="ps-4">
-                            <h6>Call for any query!</h6>
-                            <h3 class="text-primary m-0">+012 345 6789</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-7">
-                    <div class="bg-light text-center p-5 wow fadeIn" data-wow-delay="0.5s">
-                        <form>
-                            <div class="row g-3">
-                                <div class="col-12 col-sm-6">
-                                    <input type="text" class="form-control border-0" placeholder="Your Name" style="height: 55px;">
-                                </div>
-                                <div class="col-12 col-sm-6">
-                                    <input type="email" class="form-control border-0" placeholder="Your Email" style="height: 55px;">
-                                </div>
-                                <div class="col-12 col-sm-6">
-                                    <input type="text" class="form-control border-0" placeholder="Your Mobile" style="height: 55px;">
-                                </div>
-                                <div class="col-12 col-sm-6">
-                                    <select class="form-select border-0" style="height: 55px;">
-                                        <option selected>Select A Freight</option>
-                                        <option value="1">Freight 1</option>
-                                        <option value="2">Freight 2</option>
-                                        <option value="3">Freight 3</option>
-                                    </select>
-                                </div>
-                                <div class="col-12">
-                                    <textarea class="form-control border-0" placeholder="Special Note"></textarea>
-                                </div>
-                                <div class="col-12">
-                                    <button class="btn btn-primary w-100 py-3" type="submit">Submit</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Quote End -->
-        
+    <!-- Pricing End -->        
 
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-light footer pt-5 wow fadeIn" data-wow-delay="0.1s" style="margin-top: 6rem;">
