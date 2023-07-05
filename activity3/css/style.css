@@ -6,10 +6,6 @@
     --dark: #060315;
 }
 
-/* .slide-fix {
-    transform: translate(-1px, -1px);
-} */
-
 .fw-medium {
     font-weight: 600 !important;
 }
@@ -444,7 +440,7 @@ a.navbar-brand:hover {
 
 /*** Footer ***/
 .footer {
-    background: linear-gradient(rgba(6, 3, 21, .5), rgba(6, 3, 21, .5)), url(../img/map.png) center center no-repeat;
+    background: linear-gradient(rgba(6, 3, 21, .5), rgba(6, 3, 21, .5)), url(../img/map.jpg) center center no-repeat;
     background-size: cover;
 }
 
