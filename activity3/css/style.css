@@ -6,6 +6,10 @@
     --dark: #060315;
 }
 
+.slide-fix {
+    transform: translate(-1px, -1px);
+}
+
 .fw-medium {
     font-weight: 600 !important;
 }
