@@ -293,13 +293,19 @@ a.navbar-brand:hover {
     box-shadow: 0 0 45px rgba(0, 0, 0, .07);
 }
 
+.price-item img {
+    margin-bottom: 5%;
+}
+
 .service-item img,
-.team-item img {
+.team-item img,
+.price-item img {
     transition: .5s;
 }
 
 .service-item:hover img,
-.team-item:hover img {
+.team-item:hover img,
+.price-item:hover img {
     transform: scale(1.1);
 }
 
@@ -473,6 +479,16 @@ a.navbar-brand:hover {
 .footer .btn.btn-link:hover {
     letter-spacing: 1px;
     box-shadow: none;
+}
+
+.footer-links a {
+    transition: .1s;
+    border-bottom: 1px solid var(--primary);
+}
+
+.footer-links a:hover {
+    color: var(--light);
+    border-color: var(--light);
 }
 
 .footer .copyright {
