@@ -1,7 +1,22 @@
 /* Custom / Non-Template CSS Start */
 
+.lesson-link {
+    transition: .3s;
+}
+
 .lesson-link:hover {
     text-decoration: none;
+    color: var(--secondary);
+}
+
+.lesson-link div {
+    background-color: var(--light);
+    transition: .3s;
+}
+
+.lesson-link:hover div {
+    transform: scale(1.05);
+    background-color: var(--primary);
 }
 
 /* Custom CSS End */
