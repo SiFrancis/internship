@@ -1,9 +1,11 @@
-/*!
- * Bootstrap v4.5.3 (https://getbootstrap.com/)
- * Copyright 2011-2020 The Bootstrap Authors
- * Copyright 2011-2020 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
- */
+/* Custom / Non-Template CSS Start */
+
+.lesson-link:hover {
+    text-decoration: none;
+}
+
+/* Custom CSS End */
+
 :root {
     --blue: #007bff;
     --indigo: #6610f2;
@@ -18,7 +20,7 @@
     --white: #fff;
     --gray: #6c757d;
     --gray-dark: #343a40;
-    --primary: #5EB1BF;
+    --primary: #f9d949;
     --secondary: #2B2D42;
     --success: #28a745;
     --info: #00394f;
@@ -34,6 +36,166 @@
     --font-family-sans-serif: "Nunito", sans-serif;
     --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace
 }
+
+.section-title {
+    position: relative;
+    display: inline-block;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--primary)
+}
+
+.section-title span {
+    position: relative;
+    background: #ffffff;
+    z-index: 1
+}
+
+.section-title::before {
+    position: absolute;
+    content: "";
+    top: 10px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: var(--primary)
+}
+
+[class^=flaticon-]:before,
+[class*=" flaticon-"]:before,
+[class^=flaticon-]:after,
+[class*=" flaticon-"]:after {
+    font-size: inherit;
+    margin-left: 0
+}
+
+.back-to-top {
+    position: fixed;
+    display: none;
+    right: 30px;
+    bottom: 30px;
+    z-index: 11;
+    animation: action 1s infinite alternate
+}
+
+@keyframes action {
+    0% {
+        transform: translateY(0)
+    }
+
+    100% {
+        transform: translateY(-15px)
+    }
+}
+
+.navbar-light .navbar-nav .nav-link {
+    padding: 30px 15px;
+    color: var(--secondary);
+    outline: none
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active {
+    color: var(--primary)
+}
+
+@media (max-width: 991.98px) {
+    .navbar-light .navbar-nav .nav-link {
+        padding: 10px 15px
+    }
+}
+
+.post-carousel .owl-nav {
+    position: absolute;
+    width: 100%;
+    height: 35px;
+    top: 50%;
+    left: 0;
+    margin-top: -20px;
+    padding: 0 45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1
+}
+
+.post-carousel .owl-nav .owl-prev,
+.post-carousel .owl-nav .owl-next {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--secondary);
+    background: var(--primary);
+    border-radius: 30px;
+    font-size: 18px;
+    opacity: .1;
+    transition: .3s
+}
+
+.post-carousel:hover .owl-nav .owl-prev,
+.post-carousel:hover .owl-nav .owl-next {
+    opacity: 1
+}
+
+.portfolio-item .portfolio-btn {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    bottom: 30px;
+    left: 30px;
+    opacity: 0;
+    transition: .5s
+}
+
+.portfolio-item:hover .portfolio-btn {
+    opacity: 1
+}
+
+.team .team-social {
+    top: 0;
+    background: #f9d949E9;
+    opacity: 0;
+    z-index: 1;
+    transition: .5s
+}
+
+.team:hover .team-social {
+    opacity: 1
+}
+
+.testimonial-carousel .owl-dots {
+    margin-top: 30px;
+    text-align: center
+}
+
+.testimonial-carousel .owl-dot {
+    display: inline-block;
+    margin: 0 5px;
+    width: 12px;
+    height: 12px;
+    border-radius: 10px;
+    background: #dddddd
+}
+
+.testimonial-carousel .owl-dot.active {
+    background: var(--primary)
+}
+
+.contact-form .help-block ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none
+}
+
+/*!
+ * Bootstrap v4.5.3 (https://getbootstrap.com/)
+ * Copyright 2011-2020 The Bootstrap Authors
+ * Copyright 2011-2020 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ */
+
 
 *,
 *::before,
@@ -165,13 +327,13 @@ sup {
 }
 
 a {
-    color: var(--primary);
+    color: var(--secondary);
     text-decoration: none;
     background-color: transparent
 }
 
 a:hover {
-    color: #0f6674;
+    color: #ffff00;
     text-decoration: underline
 }
 
@@ -2715,23 +2877,22 @@ fieldset:disabled a.btn {
 }
 
 .btn-primary {
-    color: #fff;
+    color: #000;
     background-color: var(--primary);
     border-color: var(--primary)
 }
 
 .btn-primary:hover {
-    color: #fff;
-    background-color: #138496;
-    border-color: #117a8b
+    color: var(--primary);
+    background-color: var(--secondary);
 }
 
 .btn-primary:focus,
 .btn-primary.focus {
     color: #fff;
-    background-color: #138496;
-    border-color: #117a8b;
-    box-shadow: 0 0 0 .2rem rgba(58, 176, 195, 0.5)
+    background-color: var(--primary);
+    border-color: #edc307;
+    box-shadow: 0 0 0 .2rem #f9d94980
 }
 
 .btn-primary.disabled,
@@ -2745,14 +2906,14 @@ fieldset:disabled a.btn {
 .btn-primary:not(:disabled):not(.disabled).active,
 .show>.btn-primary.dropdown-toggle {
     color: #fff;
-    background-color: #117a8b;
-    border-color: #10707f
+    background-color: var(--primary);
+    border-color: var(--primary);
 }
 
 .btn-primary:not(:disabled):not(.disabled):active:focus,
 .btn-primary:not(:disabled):not(.disabled).active:focus,
 .show>.btn-primary.dropdown-toggle:focus {
-    box-shadow: 0 0 0 .2rem rgba(58, 176, 195, 0.5)
+    box-shadow: 0 0 0 .2rem #f9d94980
 }
 
 .btn-secondary {
@@ -3337,7 +3498,7 @@ fieldset:disabled a.btn {
 }
 
 .btn-link:hover {
-    color: #0f6674;
+    color: #fff;
     text-decoration: underline
 }
 
@@ -5271,7 +5432,7 @@ input[type="button"].btn-block {
 
 .page-link:hover {
     z-index: 2;
-    color: #0f6674;
+    color: #fff;
     text-decoration: none;
     background-color: #e9ecef;
     border-color: #dee2e6
@@ -10695,7 +10856,7 @@ button.bg-dark:focus {
 
 a.text-primary:hover,
 a.text-primary:focus {
-    color: #0f6674 !important
+    color: #fff !important
 }
 
 .text-secondary {
@@ -10704,7 +10865,7 @@ a.text-primary:focus {
 
 a.text-secondary:hover,
 a.text-secondary:focus {
-    color: #000203 !important
+    color: var(--primary) !important
 }
 
 .text-success {
@@ -10722,7 +10883,7 @@ a.text-success:focus {
 
 a.text-info:hover,
 a.text-info:focus {
-    color: #0f6674 !important
+    color: #fff !important
 }
 
 .text-warning {
@@ -10905,154 +11066,3 @@ a.text-dark:focus {
     }
 }
 
-.section-title {
-    position: relative;
-    display: inline-block;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    color: var(--primary)
-}
-
-.section-title span {
-    position: relative;
-    background: #ffffff;
-    z-index: 1
-}
-
-.section-title::before {
-    position: absolute;
-    content: "";
-    top: 10px;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background: var(--primary)
-}
-
-[class^=flaticon-]:before,
-[class*=" flaticon-"]:before,
-[class^=flaticon-]:after,
-[class*=" flaticon-"]:after {
-    font-size: inherit;
-    margin-left: 0
-}
-
-.back-to-top {
-    position: fixed;
-    display: none;
-    right: 30px;
-    bottom: 30px;
-    z-index: 11;
-    animation: action 1s infinite alternate
-}
-
-@keyframes action {
-    0% {
-        transform: translateY(0)
-    }
-
-    100% {
-        transform: translateY(-15px)
-    }
-}
-
-.navbar-light .navbar-nav .nav-link {
-    padding: 30px 15px;
-    color: var(--secondary);
-    outline: none
-}
-
-.navbar-light .navbar-nav .nav-link:hover,
-.navbar-light .navbar-nav .nav-link.active {
-    color: var(--primary)
-}
-
-@media (max-width: 991.98px) {
-    .navbar-light .navbar-nav .nav-link {
-        padding: 10px 15px
-    }
-}
-
-.post-carousel .owl-nav {
-    position: absolute;
-    width: 100%;
-    height: 35px;
-    top: 50%;
-    left: 0;
-    margin-top: -20px;
-    padding: 0 45px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    z-index: 1
-}
-
-.post-carousel .owl-nav .owl-prev,
-.post-carousel .owl-nav .owl-next {
-    width: 35px;
-    height: 35px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--secondary);
-    background: var(--primary);
-    border-radius: 30px;
-    font-size: 18px;
-    opacity: .1;
-    transition: .3s
-}
-
-.post-carousel:hover .owl-nav .owl-prev,
-.post-carousel:hover .owl-nav .owl-next {
-    opacity: 1
-}
-
-.portfolio-item .portfolio-btn {
-    position: absolute;
-    top: 30px;
-    right: 30px;
-    bottom: 30px;
-    left: 30px;
-    opacity: 0;
-    transition: .5s
-}
-
-.portfolio-item:hover .portfolio-btn {
-    opacity: 1
-}
-
-.team .team-social {
-    top: 0;
-    background: rgba(23, 162, 184, 0.8);
-    opacity: 0;
-    z-index: 1;
-    transition: .5s
-}
-
-.team:hover .team-social {
-    opacity: 1
-}
-
-.testimonial-carousel .owl-dots {
-    margin-top: 30px;
-    text-align: center
-}
-
-.testimonial-carousel .owl-dot {
-    display: inline-block;
-    margin: 0 5px;
-    width: 12px;
-    height: 12px;
-    border-radius: 10px;
-    background: #dddddd
-}
-
-.testimonial-carousel .owl-dot.active {
-    background: var(--primary)
-}
-
-.contact-form .help-block ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none
-}
