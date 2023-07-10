@@ -7,15 +7,32 @@
     font-size: 1.5rem;
 }
 
+.navbar-nav .dropdown-menu {
+    right: auto !important;
+    left: 50% !important;
+    top: 100% !important;
+    -webkit-transform: translate(-50%, 0) !important;
+    -o-transform: translate(-50%, 0) !important;
+    transform: translate(-50%, 0) !important;
+}
+
 .navbar-nav .btn:hover {
     background-color: var(--primary);
     box-shadow: none;
     color: #fff;
 }
 
+.navbar-nav .btn:focus {
+    box-shadow: 0 0 0 .2rem rgba(249, 217, 73, 0.25)
+}
+
 .navbar-nav .btn.active {
     background-color: #f45050;
     color: #fff;
+}
+
+.navbar-nav .btn.active:focus {
+    box-shadow: 0 0 0 .2rem rgba(244, 80, 80, 0.25)
 }
 
 .lesson-link {
