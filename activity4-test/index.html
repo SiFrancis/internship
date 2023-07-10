@@ -33,20 +33,17 @@
     <!-- Navbar Start -->
     <div class="container-fluid bg-light position-relative shadow">
         <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0 px-lg-5">
-            <a href="" class="navbar-brand font-weight-bold text-secondary" style="font-size: 50px;">
-                <i class="flaticon-041-abacus"></i>
-                <span class="text-primary">Abacus</span>
+            <a href="" class="navbar-brand w-25 ps-0">
+                <img class="img-fluid" src="img/abacus.png" alt="">
             </a>
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+            <div class="collapse navbar-collapse align-items-center nav nav-pills" id="navbarCollapse">
                 <div class="navbar-nav font-weight-bold mx-auto py-0">
-                    <a href="index.html" class="nav-item nav-link active">Home</a>
-                    <a href="about.html" class="nav-item nav-link">About</a>
-                    <a href="contact.html" class="nav-item nav-link">Contact</a>
-                    <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Lessons</a>
+                    <button class="btn nav-item active mx-2 my-3 px-5 py-3"><i class="fas fa-home"></i></button>
+                    <div class="nav-item dropdown mx-2 my-3">
+                        <button class="btn nav-item btn-dropdown px-5 py-3" data-toggle="dropdown"><i class="fas fa-book-open"></i></button>
                         <div class="dropdown-menu rounded-sm m-0">
                             <a href="blog.html" class="dropdown-item">Real Numbers</a>
                             <a href="single.html" class="dropdown-item">Expressions</a>
@@ -56,15 +53,22 @@
                             <a href="single.html" class="dropdown-item">Linear Equations</a>
                         </div>
                     </div>
-                    <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Activities</a>
+                    <div class="nav-item dropdown mx-2 my-3">
+                        <button class="btn nav-item btn-dropdown px-5 py-3" data-toggle="dropdown"><i class="fas fa-gamepad"></i></button>
                         <div class="dropdown-menu rounded-sm m-0">
                             <a href="blog.html" class="dropdown-item">activity</a>
                             <a href="single.html" class="dropdown-item">lesson 2</a>
                         </div>
                     </div>
+                    <div class="nav-item dropdown mx-2 my-3">
+                        <button class="btn nav-item btn-dropdown px-5 py-3" data-toggle="dropdown"><i class="fas fa-bars"></i></button>
+                        <div class="dropdown-menu rounded-sm m-0">
+                            <a href="about.html" class="dropdown-item">About</a>
+                            <a href="contact.html" class="dropdown-item">Contact</a>
+                        </div>
+                    </div>
                 </div>
-                <a href="" class="btn btn-primary border-0 px-4">Sign In</a>
+                <a href="#" class="btn btn-primary nav-item border-0 px-4">Sign In</a>
             </div>
         </nav>
     </div>
