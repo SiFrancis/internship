@@ -54,6 +54,21 @@
     transform: scale(1.05);
     background-color: var(--primary);
 }
+div#container {
+    width: 490px;
+    height: 388px;
+    overflow: hidden;
+    overflow-x: hidden;
+    border: 6px solid #D6D6FF;
+}
+
+iframe#embed {
+    width: 1500px;
+    height: 1000px;
+    margin-left: -512px;
+    margin-top: -559px;
+    overflow: hidden;
+}
 
 /* Custom CSS End */
 
