@@ -71,7 +71,7 @@
     overflow: hidden;
 }
 
-#exps-container {
+.sgmath-container {
     max-width: 1102px;
     height: 786px;
     overflow: hidden;
@@ -80,7 +80,7 @@
     border: 2px solid red;
 }
 
-#embed-exps {
+.embed-sgmath {
     width: 1500px;
     height: 786px;
     margin-top: -70px;
