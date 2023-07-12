@@ -60,6 +60,53 @@
     background-color: var(--primary);
 }
 
+.btn-signin {
+    color: var(--secondary) !important;
+    border: 1px solid var(--secondary) !important;
+    margin-top: 0.5rem !important;
+    margin-bottom: 0.5rem !important;
+}
+
+.btn-signin:hover {
+    background-color: var(--secondary);
+    color: #fff !important;
+}
+
+#balance-container {
+    max-width: 490px;
+    height: 388px;
+    overflow: hidden;
+    overflow-x: hidden;
+    border: 6px solid #D6D6FF;
+}
+
+#embed-balance {
+    width: 1500px;
+    height: 1000px;
+    margin-left: -512px;
+    margin-top: -558px;
+    overflow: hidden;
+}
+
+#sgmath-container {
+    max-width: 1102px;
+    height: 766px;
+    overflow: hidden;
+    overflow-x: hidden;
+    transform: scale(80%) translateY(-10%);
+}
+
+#embed-sgmath {
+    width: 1500px;
+    height: 766px;
+    margin-top: -70px;
+    overflow: hidden;
+}
+
+.text-link {
+    text-decoration: underline !important;
+}
+
 /* Custom CSS End */
 
 :root {
