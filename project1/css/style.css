@@ -39,25 +39,16 @@
     box-shadow: 0 0 0 .2rem rgba(244, 80, 80, 0.25)
 }
 
-
-.lesson-link {
-    transition: .3s;
-}
-
-.lesson-link:hover {
-    text-decoration: none;
-    color: var(--secondary);
-}
-
-.lesson-link div {
-    height: 100%;
+.lesson-link img {
     background-color: var(--light);
     transition: .3s;
+    filter: saturate(70%);
 }
 
-.lesson-link:hover div {
+.lesson-link:hover img {
     transform: scale(1.05);
     background-color: var(--primary);
+    filter: saturate(105%);
 }
 
 .btn-signin {
@@ -72,7 +63,22 @@
     color: #fff !important;
 }
 
-#balance-container {
+[id^="mathgames-div"] {
+    max-width: 1102px;
+    height: 766px;
+    overflow: hidden;
+    overflow-x: hidden;
+    transform: scale(80%) translateY(-10%);
+}
+
+[id^="mathgames-embed"] {
+    width: 1500px !important;
+    height: 766px;
+    margin-top: -70px;
+    overflow: hidden;
+}
+
+#div-balance {
     max-width: 490px;
     height: 388px;
     overflow: hidden;
@@ -88,18 +94,46 @@
     overflow: hidden;
 }
 
-#sgmath-container {
-    max-width: 1102px;
-    height: 766px;
+#div-expression {
+    max-width: 1200px;
+    height: 635px;
+    overflow: hidden;
+    overflow-x: hidden;
+}
+
+#embed-expression {
+    width: 1500px;
+    height: 635px;
+    overflow: hidden;
+}
+
+#div-order {
+    max-width: 810px;
+    height: 610px;
     overflow: hidden;
     overflow-x: hidden;
     transform: scale(80%) translateY(-10%);
 }
 
-#embed-sgmath {
-    width: 1500px;
-    height: 766px;
-    margin-top: -70px;
+#embed-order {
+    width: 1500px !important;
+    height: 610px;
+    margin-left: -347px;
+    overflow: hidden;
+}
+
+#div-linear {
+    max-width: 910px;
+    height: 458px;
+    overflow: hidden;
+    overflow-x: hidden;
+    transform: scale(80%) translateY(-10%);
+}
+
+#embed-linear {
+    width: 1500px !important;
+    height: 458px;
+    margin-left: -300px;
     overflow: hidden;
 }
 
