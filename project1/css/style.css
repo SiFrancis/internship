@@ -1,5 +1,9 @@
 /* Custom / Non-Template CSS Start */
 
+.nav-item .dropdown-toggle:hover {
+    color: var(--primary);
+}
+
 .navbar-nav .btn,
 .dropdown .btn {
     padding-left: 5rem;
@@ -35,6 +39,7 @@
     box-shadow: 0 0 0 .2rem rgba(244, 80, 80, 0.25)
 }
 
+
 .lesson-link {
     transition: .3s;
 }
@@ -53,53 +58,6 @@
 .lesson-link:hover div {
     transform: scale(1.05);
     background-color: var(--primary);
-}
-
-.btn-signin {
-    color: var(--secondary) !important;
-    border: 1px solid var(--secondary) !important;
-    margin-top: 0.5rem !important;
-    margin-bottom: 0.5rem !important;
-}
-
-.btn-signin:hover {
-    background-color: var(--secondary);
-    color: #fff !important;
-}
-
-#balance-container {
-    max-width: 490px;
-    height: 388px;
-    overflow: hidden;
-    overflow-x: hidden;
-    border: 6px solid #D6D6FF;
-}
-
-#embed-balance {
-    width: 1500px;
-    height: 1000px;
-    margin-left: -512px;
-    margin-top: -558px;
-    overflow: hidden;
-}
-
-#sgmath-container {
-    max-width: 1102px;
-    height: 766px;
-    overflow: hidden;
-    overflow-x: hidden;
-    transform: scale(80%) translateY(-10%);
-}
-
-#embed-sgmath {
-    width: 1500px;
-    height: 766px;
-    margin-top: -70px;
-    overflow: hidden;
-}
-
-.text-link {
-    text-decoration: underline !important;
 }
 
 /* Custom CSS End */
@@ -194,8 +152,7 @@
 
 .navbar-light .navbar-nav .nav-link:hover,
 .navbar-light .navbar-nav .nav-link.active {
-    background-color: var(--primary);
-    color: #fff;
+    color: var(--primary);
 }
 
 @media (max-width: 991.98px) {
@@ -2978,7 +2935,7 @@ fieldset:disabled a.btn {
 .btn-primary {
     color: #000;
     background-color: var(--primary);
-    border-color: var(--primary);
+    border-color: var(--primary)
 }
 
 .btn-primary:hover {
@@ -3023,8 +2980,8 @@ fieldset:disabled a.btn {
 
 .btn-secondary:hover {
     color: #fff;
-    background-color: #17192e;
-    border-color: #17192e
+    background-color: #001d29;
+    border-color: #00141c
 }
 
 .btn-secondary:focus,
@@ -3617,7 +3574,7 @@ fieldset:disabled a.btn {
     padding: .5rem 1rem;
     font-size: 1.25rem;
     line-height: 1.5;
-    border-radius: 30px;
+    border-radius: .3rem
 }
 
 .btn-sm,
@@ -5146,7 +5103,7 @@ input[type="button"].btn-block {
 
 .navbar-light .navbar-nav .nav-link:hover,
 .navbar-light .navbar-nav .nav-link:focus {
-    background-color: var(--primary);
+    color: var(--primary)
 }
 
 .navbar-light .navbar-nav .nav-link.disabled {
@@ -5156,7 +5113,7 @@ input[type="button"].btn-block {
 .navbar-light .navbar-nav .active>.nav-link,
 .navbar-light .navbar-nav .nav-link.show,
 .navbar-light .navbar-nav .nav-link.active {
-    background-color: #f45050
+    color: #f45050
 }
 
 .navbar-light .navbar-toggler {
@@ -11164,3 +11121,18 @@ a.text-dark:focus {
     }
 }
 
+.answers {
+    color: white;
+}
+
+.answers:hover {
+    color: #666;
+}
+
+.nextl {
+    float: right;
+}
+
+.prevl {
+    float: left;
+}
