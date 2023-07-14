@@ -4,6 +4,11 @@
     color: var(--primary);
 }
 
+.navbar-nav .btn, .dropdown {
+    display: flex;
+    align-items: center;
+}
+
 .navbar-nav .btn,
 .dropdown .btn {
     padding-left: 5rem;
@@ -20,22 +25,22 @@
     transform: translate(-50%, 0) !important;
 }
 
-.navbar-nav .btn:hover {
+.navbar-nav .btn-nav:hover {
     background-color: var(--primary);
     box-shadow: none;
     color: #fff;
 }
 
-.navbar-nav .btn:focus {
+.navbar-nav .btn-nav:focus {
     box-shadow: 0 0 0 .2rem rgba(249, 217, 73, 0.25)
 }
 
-.navbar-nav .btn.active {
+.navbar-nav .btn-nav.active {
     background-color: #f45050;
     color: #fff;
 }
 
-.navbar-nav .btn.active:focus {
+.navbar-nav .btn-nav.active:focus {
     box-shadow: 0 0 0 .2rem rgba(244, 80, 80, 0.25)
 }
 
@@ -694,6 +699,7 @@ h6,
 .h4,
 .h5,
 .h6 {
+    margin-top: .5rem;
     margin-bottom: .5rem;
     font-family: "Handlee", cursive;
     font-weight: bold;
@@ -11214,11 +11220,15 @@ a.text-dark:focus {
 }
 
 .answers {
-    color: white;
+    border-radius: 0.5em;
+    background-color: var(--secondary);
+    color: var(--secondary);
+    transition: 0.24s;
 }
 
 .answers:hover {
     color: #666;
+    background-color: white;
 }
 
 .nextl {
